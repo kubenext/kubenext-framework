@@ -1,0 +1,13 @@
+
+  ${AnsiColor.GREEN}██╗  ██╗██╗   ██╗██████╗ ███████╗${AnsiColor.RED}███╗   ██╗███████╗██╗  ██╗████████╗
+  ${AnsiColor.GREEN}██║ ██╔╝██║   ██║██╔══██╗██╔════╝${AnsiColor.RED}████╗  ██║██╔════╝╚██╗██╔╝╚══██╔══╝
+  ${AnsiColor.GREEN}█████╔╝ ██║   ██║██████╔╝█████╗  ${AnsiColor.RED}██╔██╗ ██║█████╗   ╚███╔╝    ██║
+  ${AnsiColor.GREEN}██╔═██╗ ██║   ██║██╔══██╗██╔══╝  ${AnsiColor.RED}██║╚██╗██║██╔══╝   ██╔██╗    ██║
+  ${AnsiColor.GREEN}██║  ██╗╚██████╔╝██████╔╝███████╗${AnsiColor.RED}██║ ╚████║███████╗██╔╝ ██╗   ██║
+  ${AnsiColor.GREEN}╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚══════╝${AnsiColor.RED}╚═╝  ╚═══╝╚══════╝╚═╝  ╚═╝   ╚═╝
+
+${AnsiColor.BRIGHT_BLUE}
+:: Kubenext Cloud Native 🚀
+:: Running Spring Boot ${spring-boot.version}
+:: https://www.kubenext.com
+${AnsiColor.DEFAULT}
