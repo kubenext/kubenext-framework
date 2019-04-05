@@ -11,6 +11,47 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>kubenext-framework</artifactId>
+    <packaging>jar</packaging>
+    <name>Kubenext server-side framework</name>
+    <description>Server-side library used by applications created with the Kubenext, see https://wwww.kubenext.com for more information on Kubenext.</description>
+    <url>https://github.com/kubenext/kubenext-framework</url>
 
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+
+    <issueManagement>
+        <system>Github</system>
+        <url>https://github.com/kubenext/kubenext-framework/issues</url>
+    </issueManagement>
+
+    <developers>
+        <developer>
+            <name>Li.shangjin</name>
+            <email>li.shangjin@icloud.com</email>
+            <organization>Kubenext</organization>
+            <organizationUrl>http://www.kubenext.com</organizationUrl>
+        </developer>
+    </developers>
+
+    <distributionManagement>
+        <snapshotRepository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+        </snapshotRepository>
+        <repository>
+            <id>ossrh</id>
+            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+        </repository>
+    </distributionManagement>
+
+    <scm>
+        <url>https://github.com/kubenext/kubenext-framework</url>
+        <connection>scm:git:https://github.com/kubenext/kubenext-framework</connection>
+        <tag>${project.version}</tag>
+    </scm>
 
 </project>
