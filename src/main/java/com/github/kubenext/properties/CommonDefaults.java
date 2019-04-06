@@ -1,5 +1,7 @@
 package com.github.kubenext.properties;
 
+import com.github.kubenext.properties.CommonProperties.Http.Version;
+
 /**
  * @author lishangjin
  */
@@ -21,6 +23,10 @@ public interface CommonDefaults {
             }
         }
 
+    }
+
+    interface Http {
+        Version version = Version.V_2_0;
     }
 
 }

@@ -1,6 +1,7 @@
 package com.github.kubenext.properties;
 
 import org.springframework.boot.context.properties.ConfigurationProperties;
+import org.springframework.web.cors.CorsConfiguration;
 
 /**
  * @author lishangjin
@@ -9,6 +10,32 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 public class CommonProperties {
 
     private final Cache cache = new Cache();
+
+    private final CorsConfiguration cors = new CorsConfiguration();
+
+    private final Http http = new Http();
+
+    public Http getHttp() {
+        return http;
+    }
+
+    public static class Http {
+        public enum Version {V_1_1, V_2_0}
+        private Version version = CommonDefaults.Http.version;
+
+        public Version getVersion() {
+            return version;
+        }
+
+        public void setVersion(Version version) {
+            this.version = version;
+        }
+    }
+
+
+    public CorsConfiguration getCors() {
+        return cors;
+    }
 
     public Cache getCache() {
         return cache;
