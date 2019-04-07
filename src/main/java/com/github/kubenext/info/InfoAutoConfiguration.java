@@ -15,4 +15,9 @@ public class InfoAutoConfiguration {
         return new CheckProfilesInfo(env);
     }
 
+    @Bean
+    public StartUpInfo startUpInfo(Environment env) {
+        return new StartUpInfo(env);
+    }
+
 }
