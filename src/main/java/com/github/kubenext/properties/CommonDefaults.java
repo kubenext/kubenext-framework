@@ -7,6 +7,12 @@ import com.github.kubenext.properties.CommonProperties.Http.Version;
  */
 public interface CommonDefaults {
 
+    interface Async {
+        int corePoolSize = 2;
+        int maxPoolSize = 50;
+        int queueCapacity = 10000;
+    }
+
     interface Cache {
 
         interface Hazelcast {

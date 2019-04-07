@@ -6,5 +6,6 @@ package com.github.kubenext.config;
 public interface SpringProfiles {
 
     String SPRING_PROFILE_DEVELOPMENT = "dev";
+    String SPRING_PROFILE_PRODUCTION = "prod";
 
 }
