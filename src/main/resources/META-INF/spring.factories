@@ -1,3 +1,5 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
   com.github.kubenext.properties.CommonProperties,\
-  com.github.kubenext.info.InfoAutoConfiguration
+  com.github.kubenext.info.InfoAutoConfiguration,\
+  com.github.kubenext.apidoc.SwaggerAutoConfiguration,\
+  com.github.kubenext.apidoc.SwaggerPluginsAutoConfiguration
