@@ -19,6 +19,99 @@ public class CommonProperties {
 
     private final Swagger swagger = new Swagger();
 
+    private final Logging logging = new Logging();
+
+    private final Metrics metrics = new Metrics();
+
+    public Metrics getMetrics() {
+        return metrics;
+    }
+
+    public static class Metrics {
+
+        private final Logs logs = new Logs();
+
+        public Logs getLogs() {
+            return logs;
+        }
+
+        public static class Logs {
+
+            private boolean enabled = CommonDefaults.Metrics.Logs.enabled;
+
+            private long reportFrequency = CommonDefaults.Metrics.Logs.reportFrequency;
+
+            public boolean isEnabled() {
+                return enabled;
+            }
+
+            public void setEnabled(boolean enabled) {
+                this.enabled = enabled;
+            }
+
+            public long getReportFrequency() {
+                return reportFrequency;
+            }
+
+            public void setReportFrequency(long reportFrequency) {
+                this.reportFrequency = reportFrequency;
+            }
+        }
+    }
+
+    public Logging getLogging() {
+        return logging;
+    }
+
+    public static class Logging {
+
+        private final Logstash logstash = new Logstash();
+
+        public Logstash getLogstash() {
+            return logstash;
+        }
+
+        public static class Logstash {
+            private boolean enabled = CommonDefaults.Logging.Logstash.enabled;
+            private String host = "localhost";
+            private int port = CommonDefaults.Logging.Logstash.port;
+            private int queueSize = CommonDefaults.Logging.Logstash.queueSize;
+
+            public boolean isEnabled() {
+                return enabled;
+            }
+
+            public void setEnabled(boolean enabled) {
+                this.enabled = enabled;
+            }
+
+            public String getHost() {
+                return host;
+            }
+
+            public void setHost(String host) {
+                this.host = host;
+            }
+
+            public int getPort() {
+                return port;
+            }
+
+            public void setPort(int port) {
+                this.port = port;
+            }
+
+            public int getQueueSize() {
+                return queueSize;
+            }
+
+            public void setQueueSize(int queueSize) {
+                this.queueSize = queueSize;
+            }
+        }
+
+    }
+
     public Swagger getSwagger() {
         return swagger;
     }

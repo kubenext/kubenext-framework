@@ -7,6 +7,32 @@ import com.github.kubenext.properties.CommonProperties.Http.Version;
  */
 public interface CommonDefaults {
 
+    interface Metrics {
+
+        interface Jmx {
+            boolean enabled = false;
+        }
+
+        interface Logs {
+            boolean enabled = false;
+            long reportFrequency = 60;
+        }
+
+        interface Prometheus {
+            boolean enabled = false;
+            String endpoint = "/prometheusMetrics";
+        }
+    }
+
+    interface Logging {
+        interface Logstash {
+            boolean enabled = false;
+            String host = "localhost";
+            int port = 5000;
+            int queueSize = 512;
+        }
+    }
+
     interface Swagger {
         String title = "Application API";
         String description = "API documentation";
