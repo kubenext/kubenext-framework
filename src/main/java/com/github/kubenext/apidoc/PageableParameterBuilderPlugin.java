@@ -30,17 +30,15 @@ public class PageableParameterBuilderPlugin implements OperationBuilderPlugin {
 
     public static final String DEFAULT_PAGE_NAME = "page";
     public static final String PAGE_TYPE = "query";
-    public static final String PAGE_DESCRIPTION = "Page number of the requested page";
+    public static final String PAGE_DESCRIPTION = "当前页码";
 
     public static final String DEFAULT_SIZE_NAME = "size";
     public static final String SIZE_TYPE = "query";
-    public static final String SIZE_DESCRIPTION = "Size of a page";
+    public static final String SIZE_DESCRIPTION = "页面大小";
 
     public static final String DEFAULT_SORT_NAME = "sort";
     public static final String SORT_TYPE = "query";
-    public static final String SORT_DESCRIPTION = "Sorting criteria in the format: property(,asc|desc). "
-            + "Default sort order is ascending. "
-            + "Multiple sort criteria are supported.";
+    public static final String SORT_DESCRIPTION = "排序: property(,asc|desc). 默认排序顺序为升序. 支持多个排序条件.";
 
     private final TypeNameExtractor nameExtractor;
     private final TypeResolver resolver;
